@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.number {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .number {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .number {
+    margin-right: 30px;
+  }
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 10px;
+
+  border: none;
+  border-radius: 2px;
+  background-color: #797878;
+  color: var(--second-text-color);
+
+  cursor: pointer;
+  transition: background-color var(--main-hover-animation);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-bg-color);
+}

@@ -1,7 +1,25 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  --main-text-color: #2b2b2b;
+  --second-text-color: #ffffff;
+  --accent-text-color: #0084ff;
+
+  --main-bg-color: #ffffff;
+  --second-bg-color: #2b2b2b;
+  --accent-bg-color: #0084ff;
+
+  --main-hover-animation: 250ms linear;
+}
+
 body {
   margin: 0;
+  padding: 0;
+
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+
+  font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,4 +30,25 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
